@@ -20,7 +20,8 @@ def result():
 @app.route('/get_ip_location')
 def get_ip_location(ip):
     with open('../wut.txt') as filename:
-        key = filename.read()
+        key = filename.read()[:-1]
+    print(filename.read)
     return requests.get('https://context.skyhookwireless.com/accelerator/ip?version=2.0&ip={}&prettyPrint=true&key={} &user=eval'.format(ip,key)).content
 
 
