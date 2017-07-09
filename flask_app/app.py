@@ -25,4 +25,4 @@ def get_ip_location(ip):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='ec2-34-202-65-148.compute-1.amazonaws.com', port=8150, debug=True)
