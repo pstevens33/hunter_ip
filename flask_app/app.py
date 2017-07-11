@@ -1,3 +1,5 @@
+# Web application for hunter's ip searching
+
 from flask import Flask, render_template, request, send_from_directory, jsonify, Response, g, flash, redirect
 from flask import make_response
 import os
